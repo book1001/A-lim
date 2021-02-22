@@ -19,6 +19,8 @@ for (var i = 0; i < btns.length; i++) {
 
 // About
 $(document).ready(function(){
+  $grid.masonry('layout');
+  
   $(".menu-top > .text-align-right").click(function(){
     $("#thumnailView").hide();
     $("#about").show();
