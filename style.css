@@ -427,17 +427,8 @@ a:visited {
 /* Modal_img_multiple */
 
 
-.modal-padding,.modal-padding-left,.modal-padding-right > img:hover {
+img:hover {
   cursor: zoom-in;
-}
-
-
-.modal-img-deco > img {
-  pointer-events: none;
-}
-
-.modal-img-deco > img:hover {
-  cursor: default;
 }
 
 img.modal-img-deco {
@@ -676,6 +667,23 @@ img.right {
 .modal-4-padding {
   border: 0px;
   padding-top: 6px;
+}
+
+.modal-5 {
+  display: grid;
+  /* position: relative;
+  padding-top: 100px; */
+  position: fixed;
+  top: 10%;
+  left:10px;
+  right:10px;
+  grid-template-columns: 100%;
+  padding: 0 0 0 0;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 80%;
+  /* height: auto; */
+  max-width: 1000px;
 }
 
 .modal-6 {
