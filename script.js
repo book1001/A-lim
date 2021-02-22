@@ -1,13 +1,16 @@
 // Masonry: https://masonry.desandro.com
 var $grid = $('.thumbnail-view').masonry({
   // options...   isFitWidth: true
-  itemSelector: '.thumbnail-view-item',
-  horizontalOrder: true,
-  columnWidth: '.thumbnail-view-item',
+  percentPosition: true,
+  columnWidth: '.thumbnail-view-sizer',
   // columnWidth: 0.01,
-  percentPosition: true
+  itemSelector: '.thumbnail-view-item',
+  horizontalOrder: true
 });
-
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
 
 // About
 $(document).ready(function(){

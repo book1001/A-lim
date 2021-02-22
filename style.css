@@ -300,11 +300,16 @@ a:visited {
 .thumbnail-view {
  margin: 0 auto;
 }
-.thumbnail-view-item {
+
+.thumbnail-view-item,
+.thumbnail-view-sizer, {
   width: 20%;
-  /* width: 20%; */
+}
+
+.thumbnail-view-item {
   margin: 0 0 20px 0;
 }
+
 .show > button > img.thumbnail {
   margin-bottom: 4px;
   transition: 0.14s linear;
@@ -942,7 +947,8 @@ img.right {
 } */
 
 @media only screen and (max-width:1024px) {
-  .thumbnail-view-item {
+  .thumbnail-view-item,
+  .thumbnail-view-sizer {
     width: 25%;
   }
   .detail-font-title {
@@ -994,7 +1000,8 @@ img.right {
 }
 
 @media only screen and (max-width:800px) {   /* For tablets: */
-  .thumbnail-view-item {
+  .thumbnail-view-item,
+  .thumbnail-view-sizer {
     width: 33%;
   }
   .menu-font {
@@ -1034,7 +1041,8 @@ img.right {
 }
 
 @media only screen and (max-width:450px) {   /* For tablets: */
-  .thumbnail-view-item {
+  .thumbnail-view-item,
+  .thumbnail-view-sizer {
     width: 50%;
   }
   ::-webkit-scrollbar { /* width */
