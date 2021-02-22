@@ -3,14 +3,14 @@ var $grid = $('.thumbnail-view').masonry({
   // options...   isFitWidth: true
   itemSelector: '.thumbnail-view-item',
   horizontalOrder: true,
-  columnWidth: '.thumbnail-view-item',
+  columnWidth: '.thumbnail-view-sizer',
   percentPosition: true
   // columnWidth: 0.01,
 });
-// // layout Masonry after each image loads
-// $grid.imagesLoaded().progress( function() {
-//   $grid.masonry();
-// });
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
 
 
 // // init Masonry after all images have loaded

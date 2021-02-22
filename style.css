@@ -301,6 +301,9 @@ a:visited {
  margin: 0 auto;
 }
 
+.thumbnail-view-sizer {
+  width: 20%;
+}
 
 .thumbnail-view-item {
   width: 20%;
@@ -946,6 +949,9 @@ img.right {
 } */
 
 @media only screen and (max-width:1024px) {
+  .thumbnail-view-sizer {
+    width: 25%;
+  }
   .thumbnail-view-item {
     width: 25%;
   }
@@ -998,6 +1004,9 @@ img.right {
 }
 
 @media only screen and (max-width:800px) {   /* For tablets: */
+  .thumbnail-view-sizer {
+    width: 33%;
+  }
   .thumbnail-view-item {
     width: 33%;
   }
@@ -1038,6 +1047,9 @@ img.right {
 }
 
 @media only screen and (max-width:450px) {   /* For tablets: */
+  .thumbnail-view-sizer {
+    width: 50%;
+  }
   .thumbnail-view-item {
     width: 50%;
   }
