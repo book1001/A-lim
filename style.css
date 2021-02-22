@@ -746,10 +746,10 @@ img.right {
 
 .modal-10 {
   display: grid;
-  grid-template-columns: 28% 28% 28% 16%;
+  grid-template-columns: 26.5% 2% 26.5% 2% 26.5% 2% 14.5%;
   padding: 0 0 0 0;
   background-color: transparent;
-  grid-gap: 30px;
+  /* grid-gap: 30px; */
   margin: 0 auto;
 }
 
@@ -928,7 +928,7 @@ img.right {
   }
 }
 
-@media only screen and (max-width:1524px) {
+/* @media only screen and (max-width:1524px) {
   .modal-10 {
     grid-template-columns: 33% 33% 33%;
     grid-gap: 20px;
@@ -938,7 +938,7 @@ img.right {
     grid-column-start: 1;
     grid-column-end: span 3;
   }
-}
+} */
 
 @media only screen and (max-width:1024px) {
   .thumbnail-view-item {
