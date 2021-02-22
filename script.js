@@ -122,7 +122,7 @@ function filterSelection(c) {
     }
   }
 
-  var x = window.matchMedia("screen and (max-width:450px)")
+  var x = window.matchMedia("screen and (max-width:450px),(max-height:450px)")
   responsive(x)
   x.addListener(responsive)
 
