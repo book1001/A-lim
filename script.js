@@ -128,7 +128,7 @@ function filterSelection(c) {
 
   function responsive(x) {
     if (x.matches) { // Mobile view
-      $grid.masonry('layout');
+      // $grid.masonry('layout');
       var thumbnailView = document.getElementsByClassName("thumbnail-view")[0];
       var thumbnailViewItem = thumbnailView.getElementsByClassName("thumbnail-view-item");
       for(var i=0; i<thumbnailViewItem.length; i++) {
@@ -140,10 +140,10 @@ function filterSelection(c) {
           thumbnailViewItem[i].style.display = "";
         }
       }
-      $grid.masonry('layout');
+      // $grid.masonry('layout');
 
     } else { // Desktop view
-      $grid.masonry('layout');
+      // $grid.masonry('layout');
       var thumbnailView = document.getElementsByClassName("thumbnail-view")[0];
       var thumbnailViewItem = thumbnailView.getElementsByClassName("thumbnail-view-item");
       for(var i=0; i<thumbnailViewItem.length; i++) {
@@ -155,7 +155,7 @@ function filterSelection(c) {
           thumbnailViewItem[i].style.display = "";
         }
       }
-      $grid.masonry('layout');
+      // $grid.masonry('layout');
     }
   }
 }
