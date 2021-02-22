@@ -60,6 +60,10 @@ var $grid = $('.thumbnail-view').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
+// layout after everything loaded
+$(window).on( 'load', function() {
+  $grid.masonry();
+});
 
 
 // // init Masonry after all images have loaded
