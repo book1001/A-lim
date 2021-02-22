@@ -3,16 +3,10 @@ var $grid = $('.thumbnail-view').masonry({
   // options...   isFitWidth: true
   itemSelector: '.thumbnail-view-item',
   horizontalOrder: true,
-  columnWidth: 0.01,
+  columnWidth: '.thumbnail-view-item',
+  // columnWidth: 0.01,
   percentPosition: true
 });
-
-$('.detail-view').masonry({
-  itemSelector: '.detail-view-item',
-  columnWidth: 180,
-  isFitWidth: true
-});
-
 
 
 // About
