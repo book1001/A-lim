@@ -1017,6 +1017,10 @@ img.right {
 }
 
 @media only screen and (max-width:600px),(max-height:600px) {   /* For tablets: */
+
+  #menuTopMobileSub {
+    display: none;
+  }
   .menu-bottom {
     display: none;
   }
@@ -1074,13 +1078,19 @@ img.right {
   .prev {
     left: 1px;
   }
+
+  .prev:hover,
+  .next:hover {
+    opacity: 1;
+  }
+
   .next {
     right: 1px;
   }
   .close {
-    top:-2px;
-    font-size: 27px;
-    right: 10px;
+    top: 0px;
+    font-size: 30px;
+    right: 12px;
   }
   #modal-one-text {
     grid-template-columns: auto;
