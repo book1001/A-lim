@@ -1009,6 +1009,9 @@ img.right {
   #modal-one-text {
     display: grid;
   }
+  #menuTopMobileSub {
+    display: none;
+  }
 }
 
 @media only screen and (max-width:800px) {   /* For tablets: */
@@ -1035,6 +1038,9 @@ img.right {
   }
   .modal-01 {
     grid-template-columns: 100%;
+  }
+  #menuTopMobileSub {
+    display: none;
   }
 }
 
