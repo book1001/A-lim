@@ -1,16 +1,29 @@
-// Masonry: https://masonry.desandro.com
-var $grid = $('.thumbnail-view').masonry({
-  // options...   isFitWidth: true
-  percentPosition: true,
-  columnWidth: '.thumbnail-view-sizer',
-  // columnWidth: 0.01,
-  itemSelector: '.thumbnail-view-item',
-  horizontalOrder: true
+// // Masonry: https://masonry.desandro.com
+// var $grid = $('.thumbnail-view').masonry({
+//   // options...   isFitWidth: true
+//   percentPosition: true,
+//   columnWidth: '.thumbnail-view-sizer',
+//   // columnWidth: 0.01,
+//   itemSelector: '.thumbnail-view-item',
+//   horizontalOrder: true
+// });
+// // layout Masonry after each image loads
+// $grid.imagesLoaded().progress( function() {
+//   $grid.masonry();
+// });
+
+
+// init Masonry after all images have loaded
+var $grid = $('.thumbnail-view').imagesLoaded( function() {
+  $grid.masonry({
+    percentPosition: true,
+    columnWidth: '.thumbnail-view-sizer',
+    // columnWidth: 0.01,
+    itemSelector: '.thumbnail-view-item',
+    horizontalOrder: true
+  });
 });
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});
+
 
 // About
 $(document).ready(function(){
