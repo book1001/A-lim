@@ -998,7 +998,7 @@ img.right {
 }
 
 @media only screen and (max-width:800px) {   /* For tablets: */
-  .thumbnail-view-item, {
+  .thumbnail-view-item {
     width: 33%;
   }
   .menu-font {
@@ -1038,7 +1038,7 @@ img.right {
 }
 
 @media only screen and (max-width:450px) {   /* For tablets: */
-  .thumbnail-view-item, {
+  .thumbnail-view-item {
     width: 50%;
   }
   ::-webkit-scrollbar { /* width */
