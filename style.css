@@ -101,15 +101,6 @@ a:visited {
   line-height: 1.5;
   color: #fefefe;
 }
-.menu-font-icon {
-  font-family: icons;
-  font-weight: normal;
-  font-style: normal;
-  /*detail*/
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #fefefe;
-}
 .menu-font-bottom {
   font-family: gopher, sans-serif;
   font-weight: 300;
@@ -1061,7 +1052,7 @@ img.right {
   .thumbnail-view-item {
     width: 33%;
   }
-  .menu-font,.menu-font-icon {
+  .menu-font {
     font-size: 1.7rem;
   }
   .menu-font-bottom {
@@ -1092,7 +1083,7 @@ img.right {
   .menu-bottom {
     display: none;
   }
-  .menu-font,.menu-font-icon {
+  .menu-font {
     font-size: 1.5rem;
   }
   .caption-font {
@@ -1111,9 +1102,20 @@ img.right {
     width: 0px;
   }
 
-  .menu-font,.menu-font-icon,.detail-font-title {
+  .menu-font,.detail-font-title {
     font-size: 1.4rem;
   }
+
+  .menu-font-icon {
+    font-family: icons;
+    font-weight: normal;
+    font-style: normal;
+    /*detail*/
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #fefefe;
+  }
+
   .menu-top {
     display: none;
   }
@@ -1177,5 +1179,7 @@ img.right {
     /* width: 50%; */
     margin: 0 auto;
   }
+
+
 
 }
