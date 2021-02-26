@@ -84,15 +84,21 @@ $(window).on( 'load', function() {
 // Mobile - Categories
 function menuTopDropdown() {
   var x = document.getElementById("menuTopMobileSub");
-  var y = document.getElementById("btnDropdown");
+  var y = document.getElementById("paddingMenuTop");
+  var z = document.getElementById("btnDropdown");
+
   if (x.style.display === "none") {
     x.style.display = "block";
-    // y.style.color = "gray";
-    y.innerHTML = "☰";
+    y.style.display = "block";
+    z.innerHTML = "☰";
   } else {
     x.style.display = "none";
-    // y.style.color = "#fefefe";
-    y.innerHTML = "‒";
+    y.style.display = "none";
+    z.innerHTML = "⁻";
+    // y.innerHTML = "☰";
+    // y.innerHTML = "−";
+    // y.innerHTML = "∥";
+    // z.style.color = "#fefefe";
   }
 }
 

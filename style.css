@@ -81,9 +81,29 @@ a:visited {
 }
 
 /* font_web */
+@font-face {
+  font-family: 'icons';
+  src: url('./font/icons.eot');
+  src: url('./font/icons.woff2') format('woff2'),
+       url('./font/icons.woff') format('woff'),
+       url('./font/icons.ttf') format('truetype'),
+       url('./font/icons.svg#icons-Regular') format('svg'),
+       url('./font/icons.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 .menu-font {
   font-family: gopher, sans-serif;
   font-weight: 300;
+  font-style: normal;
+  /*detail*/
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fefefe;
+}
+.menu-font-icon {
+  font-family: icons;
+  font-weight: normal;
   font-style: normal;
   /*detail*/
   font-size: 2rem;
@@ -146,6 +166,7 @@ a:visited {
   letter-spacing: 0.2px;
   color: #fefefe;
 }
+
 
 /* Menu */
 .menu-top {
@@ -553,8 +574,13 @@ img.right {
   /* float:left; */
 }
 
-.padding-menu-top {
+#paddingMenuTop {
   height: 60px;
+  width: auto;
+  cursor: default;
+}
+.padding-menu-top-close {
+  height: 0px;
   width: auto;
   cursor: default;
 }
@@ -1035,7 +1061,7 @@ img.right {
   .thumbnail-view-item {
     width: 33%;
   }
-  .menu-font {
+  .menu-font,.menu-font-icon {
     font-size: 1.7rem;
   }
   .menu-font-bottom {
@@ -1066,7 +1092,7 @@ img.right {
   .menu-bottom {
     display: none;
   }
-  .menu-font {
+  .menu-font,.menu-font-icon {
     font-size: 1.5rem;
   }
   .caption-font {
@@ -1085,7 +1111,7 @@ img.right {
     width: 0px;
   }
 
-  .menu-font,.detail-font-title {
+  .menu-font,.menu-font-icon,.detail-font-title {
     font-size: 1.4rem;
   }
   .menu-top {
@@ -1100,9 +1126,14 @@ img.right {
     display: block;
   }
 
-  .padding-menu-top {
-    height: 40px;
+  #paddingMenuTop {
+    height: 18px;
   }
+
+  .padding-menu-top-close {
+    height: 22px;
+  }
+
   .modal-default {
     width: 95%;
   }
