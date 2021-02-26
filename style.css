@@ -193,7 +193,7 @@ a:visited {
 .menu-left {
   position: fixed;
   top: 45%;
-  z-index: 2;
+  z-index: 3;
   user-select: none;
   -webkit-user-select: none;
   writing-mode: vertical-rl;
@@ -208,7 +208,7 @@ a:visited {
 .menu-right {
   position: fixed;
   top: 45%;
-  z-index: 2;
+  z-index: 3;
   user-select: none;
   -webkit-user-select: none;
   writing-mode: vertical-rl;
@@ -944,16 +944,6 @@ img.right {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*
 .caption-container {
   text-align: center;
@@ -965,9 +955,12 @@ img.right {
 
 
 
-
-
 /* Responsive layout */
+@media only screen and (max-width:1300px) {
+  .padding-bottom {
+    height: 80px;
+  }
+}
 
 @media only screen and (min-width:1025px) {
   #modal-one {
@@ -994,6 +987,10 @@ img.right {
 } */
 
 @media only screen and (max-width:1024px) {
+  .padding-bottom {
+    height: 0px;
+  }
+
   .thumbnail-view-sizer {
     width: 25%;
   }
@@ -1081,12 +1078,14 @@ img.right {
   }
 }
 
-@media only screen and (max-width:600px),(max-height:600px) {   /* For tablets: */
+
+
+@media only screen and (max-width:600px),(max-height:700px) {   /* For tablets: */
 
   #menuTopMobileSub {
     display: none;
   }
-  .menu-bottom {
+  #menu-bottom {
     display: none;
   }
   .menu-font {

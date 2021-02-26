@@ -179,3 +179,63 @@ function filterSelection(c) {
     }
   }
 }
+
+
+
+//
+// var didScroll;
+// var lastScrollTop = 0;
+// var delta = 5;
+// var navbarHeight = $('header').outerHeight();
+//
+// // 스크롤시에 사용자가 스크롤했다는 것을 알림
+// $(window).scroll(function(event){
+//   didScroll = true;
+// });
+//
+// // hasScrolled()를 실행하고 didScroll 상태를 재설정
+// setInterval(function() {
+//   if (didScroll) {
+//     hasScrolled();
+//     didScroll = false;
+//   }
+// }, 250);
+//
+// function hasScrolled() { // 동작을 구현
+//   var st = $(this).scrollTop();
+//
+//   // Make sure they scroll more than delta
+//   if(Math.abs(lastScrollTop - st) <= delta)
+//     return;
+//
+//   // If they scrolled down and are past the navbar, add class .nav-up.
+//   // This is necessary so you never see what is "behind" the navbar.
+//   if (st > lastScrollTop && st > navbarHeight){
+//     // Scroll Down
+//     $("#menu-bottom").hide();
+//     // $('header').removeClass('nav-down').addClass('nav-up');
+//   } else {
+//     // Scroll Up
+//     if(st + $(window).height() < $(document).height()) {
+//       $("#menu-bottom").show();
+//       // $('header').removeClass('nav-up').addClass('nav-down');
+//     }
+//   } lastScrollTop = st;
+//
+//   // console.log(hasScrolled);
+//   // document.getElementById("menu-bottom").style.display="none";
+//   // document.getElementById("menu-bottom").classList.add("mystyle");
+// }
+
+
+$(window).on('mousewheel',function(e){
+    var wheel = e.originalEvent.wheelDelta;
+    var current = $(window).scrollTop();
+    if(wheel<0){
+        if(current>1){
+           $("#menu-bottom").fadeOut( 200, 'linear');
+         }
+    }else{
+      $("#menu-bottom").fadeIn( 200, 'linear');
+    }
+});
