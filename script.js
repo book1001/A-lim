@@ -82,17 +82,27 @@ $(window).on( 'load', function() {
 
 
 // Mobile - Categories
+
+// var x = window.matchMedia("screen and (max-width:450px),(max-height:450px)")
+// menuTopDropdown(x)
+// x.menuTopDropdown(responsive)
+//
+// function menuTopDropdown(x) {
+//   if (x.matches) {
+
+
 function menuTopDropdown() {
-  var x = document.getElementById("menuTopMobileSub");
+  var m = document.getElementById("menuTopMobileSub");
   var y = document.getElementById("paddingMenuTop");
   var z = document.getElementById("btnDropdown");
 
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (m.style.display === "none") {
+  // if (z.innerHTML === "☰") {
+    m.style.display = "block";
     y.style.display = "block";
     z.innerHTML = "☰";
   } else {
-    x.style.display = "none";
+    m.style.display = "none";
     y.style.display = "none";
     z.innerHTML = "⁻";
     // y.innerHTML = "☰";
@@ -139,6 +149,7 @@ function filterSelection(c) {
       // $grid.masonry('layout');
       var thumbnailView = document.getElementsByClassName("thumbnail-view")[0];
       var thumbnailViewItem = thumbnailView.getElementsByClassName("thumbnail-view-item");
+
       for(var i=0; i<thumbnailViewItem.length; i++) {
         var target = thumbnailViewItem[i].getElementsByClassName("filterDiv")[0];
         if(!target.classList.contains("show")) {
