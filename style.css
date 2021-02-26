@@ -398,7 +398,10 @@ a:visited {
   z-index: 5;
   user-select: none;
   -webkit-user-select: none;
-  font-size: 45px;
+  font-family: icons;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 58px;
   color: #fefefe;
 }
 .prev {
@@ -419,14 +422,17 @@ a:visited {
   position: fixed;
   top: 0px;
   right: 21px;
-  padding: 0px 0px 20px 20px;
+  padding: 12px 0px 20px 20px;
   z-index: 5;
   user-select: none;
   -webkit-user-select: none;
-  font-weight: 300;
-  font-size: 35px;
+  font-family: icons;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 27px;
   color: rgba(240,240,240,1);
 }
+
 .close:hover,
 .close:focus {
   cursor: pointer;
@@ -1061,7 +1067,7 @@ img.right {
   }
   .prev,
   .next {
-    font-size: 35px;
+    font-size: 52px;
   }
   .modal-img-single {
     position: fixed;
@@ -1151,25 +1157,27 @@ img.right {
 
   .prev,
   .next {
-    font-size: 27px;
+    font-size: 45px;
   }
   .prev {
-    left: 1px;
+    left: 0px;
+    padding: 20px 20px 20px 7px;
   }
-
+  .next {
+    right: 0px;
+    padding: 20px 7px 20px 20px;
+  }
   .prev:hover,
   .next:hover {
     opacity: 1;
   }
 
-  .next {
-    right: 1px;
-  }
   .close {
     top: 0px;
-    font-size: 30px;
-    right: 12px;
+    font-size: 22px;
+    right: 16px;
   }
+
   #modal-one-text {
     grid-template-columns: auto;
     width: 85%

@@ -104,9 +104,8 @@ function menuTopDropdown() {
   } else {
     m.style.display = "none";
     y.style.display = "none";
-    z.innerHTML = "⁻";
-
-
+    z.innerHTML = "-";
+    // z.innerHTML = "⁻";
     // y.innerHTML = "☰";
     // y.innerHTML = "−";
     // y.innerHTML = "∥";
