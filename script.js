@@ -60,7 +60,7 @@ var $grid = $('.thumbnail-view').masonry({
 });
 // layout Masonry after each image loads
 $grid.imagesLoaded().progress( function() {
-  $grid.masonry();
+  $grid.masonry('layout');
 });
 // layout after everything loaded
 $(window).on( 'load', function() {

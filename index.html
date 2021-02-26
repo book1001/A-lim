@@ -411,12 +411,12 @@
             <img class="modal-img-deco" src="./image_details/Detail_2019_TimeMuseum_logo.png" style="width: 100%; display: block;">
             <div class="padding-40"></div>
             <div class="iframe">
-              <iframe class="iframe-responsive" src="https://player.vimeo.com/video/387107613" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="iframe-responsive" src="https://player.vimeo.com/video/391293496" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="padding-40"></div>
             <div class="modal-3-one-video">
               <div class="iframe-time">
-                <iframe class="iframe-responsive" src="https://player.vimeo.com/video/387107055" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="iframe-responsive" src="https://player.vimeo.com/video/391292917" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="padding-40"></div>
@@ -557,29 +557,26 @@
           <div id="modal-one">
             <div class="modal-6-one">
               <div>
-                <img class="modal-img-deco" src="./image_details/Detail_2019_Five_Sedaris.svg" style="width: 80%; display: block;">
+                <img class="center modal-img-deco" src="./image_details/Detail_2019_Five_Sedaris.svg" style="width: 80%; display: block;">
                 <div class="padding-50"></div>
               </div>
               <div>
-                <div class="padding-50"></div>
-                <div class="padding-50"></div>
-                <img class="modal-img-deco" class="center" src="./image_details/Detail_2019_Five_1.png" style="width: 85%; display: block;">
+                <img class="center modal-img-deco" class="center" src="./image_details/Detail_2019_Five_1_area.svg" style="width: 85%; display: block;">
+                <img class="center" class="center" src="./image_details/Detail_2019_Five_1.png" style="width: 85%; display: block;">
               </div>
               <div>
-                <img src="./image_details/Detail_2019_Five_Me.svg" style="width: 90%; display: block;">
+                <img class="center modal-img-deco" src="./image_details/Detail_2019_Five_Me.svg" style="width: 100%; display: block;">
                 <div class="padding-50"></div>
               </div>
               <div>
-                <div class="padding-50"></div>
-                <div class="padding-50"></div>
-                <div class="padding-50"></div>
+                <img class="center modal-img-deco" class="center" src="./image_details/Detail_2019_Five_2_area.svg" style="width: 85%; display: block;">
                 <img class="center" src="./image_details/Detail_2019_Five_2.png" style="width: 85%; display: block;">
               </div>
             </div>
             <div class="modal-padding">
-              <img class="modal-img-deco" class="center modal-img-deco" src="./image_details/Detail_2019_Five_children.svg" style="width: 55%; display: block;">
+              <img class="center modal-img-deco" class="center modal-img-deco" src="./image_details/Detail_2019_Five_children.svg" style="width: 55%; display: block;">
               <div class="padding-30"></div>
-              <img class="modal-img-deco" class="center modal-img-deco" src="./image_details/Detail_2019_Five_particles.svg" style="width: 25%; display: block;">
+              <img class="center modal-img-deco" class="center modal-img-deco" src="./image_details/Detail_2019_Five_particles.svg" style="width: 25%; display: block;">
               <div class="padding-40"></div>
             </div>
             <div class="modal-padding">
@@ -649,7 +646,7 @@
             <div class="modal-padding">
               <div class="modal-7-one-video">
                 <div class="iframe-cube">
-                  <iframe class="iframe-responsive" src="https://player.vimeo.com/video/387108036" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="iframe-responsive" src="https://player.vimeo.com/video/391294241" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="padding-40"></div>
@@ -716,7 +713,7 @@
             <div class="modal-padding">
               <div class="modal-8-one-video">
                 <div class="iframe">
-                  <iframe class="iframe-responsive" src="https://player.vimeo.com/video/387106240" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="iframe-responsive" src="https://player.vimeo.com/video/391290044" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="padding-40"></div>
@@ -1505,8 +1502,9 @@
 
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
         }
-
         slides[n - 1].style.display = "block";
       }
 
