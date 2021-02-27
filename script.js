@@ -244,6 +244,7 @@ function filterSelection(c) {
 // }
 
 
+//스크롤 끝까지 내리면 Bottom Menu 삭제함
 $(window).on('mousewheel',function(e){
     var wheel = e.originalEvent.wheelDelta;
     var current = $(window).scrollTop();
@@ -254,6 +255,12 @@ $(window).on('mousewheel',function(e){
     }else{
       $("#menu-bottom").fadeIn( 200, 'linear');
     }
+});
+
+
+// 아이패드 되는지 확인필요
+$(window).on('swipe', function() {
+    $("#menu-bottom").fadeOut( 200, 'linear');
 });
 
 
