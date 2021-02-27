@@ -1,6 +1,7 @@
 body {
   background-color: black;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; /*iPad Modal 터치 버벅임 해결 */
 }
 
 /* Scrollbar */
@@ -1131,10 +1132,6 @@ img.right {
   .next {
     right: 0px;
     padding: 20px 7px 20px 20px;
-  }
-  .prev:hover,
-  .next:hover {
-    opacity: 1;
   }
 
   .close {

@@ -19,7 +19,7 @@ for (var i = 0; i < btns.length; i++) {
 
 // About
 $(document).ready(function(){
-$grid.masonry('layout');
+  $grid.masonry('layout');
 
   $(".menu-top > .text-align-right").click(function(){
     $("#thumnailView").hide();
@@ -44,6 +44,22 @@ $grid.masonry('layout');
     $("#about").hide();
     $grid.masonry('layout');
   });
+
+  // $(function() {
+  //     $('#prev').mouseenter(function(e) {
+  //       $('#prev').addClass('hover');
+  //       $('#regular_js .content').show();
+  //     }).mouseleave(function(e) {
+  //       $('#prev').removeClass('hover');
+  //       $('#regular_js .content').hide();
+  //     }).click(function(e) {
+  //       $('#prev').removeClass('hover');
+  //       $('#regular_js .content').hide();
+  //     });
+
+  // $('body').unbind('touchmove');
+  // $('body').unbind('touchend');
+  // $('body').unbind('touchstart');
 });
 
 
@@ -239,3 +255,13 @@ $(window).on('mousewheel',function(e){
       $("#menu-bottom").fadeIn( 200, 'linear');
     }
 });
+
+
+//Touch 이벤트시 Prev, Next의 Hover 투명도 없앰
+document.getElementById("prev").addEventListener("touchstart", touchHover);
+document.getElementById("next").addEventListener("touchstart", touchHover);
+
+function touchHover() {
+  document.getElementById("prev").style.opacity = "1";
+  document.getElementById("next").style.opacity = "1";
+}

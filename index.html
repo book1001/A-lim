@@ -256,7 +256,7 @@
     <div class="padding-bottom"></div>
 
     <a id="prev" class="prev" onclick="plusSlides(-1)">&#12296;</a>
-    <a id="next" class="next" onclick="plusSlides(1)">&#12297;</a>
+    <a id="next" class="next" onclick="plusSlides(1)" >&#12297;</a>
     <span id="close" class="close" onclick="closeModal()">&times;</span>
     <span id="back" class="close" onclick="openModal()">&#8592;</span>
 
@@ -1179,6 +1179,7 @@
 
     <script>
 
+      //Thumnail에 hover시 Bottom Menu Underline
       window.onload = function() {
 
         var thumbnails = document.getElementsByClassName("thumbnail");
@@ -1209,7 +1210,7 @@
         }
 
 
-
+        //Bottom Menu에 hover시 Thumnail
         var menus = document.getElementById("menu-bottom").getElementsByClassName("filterDiv");
         for(var i=0; i<menus.length; i++) {
           menus[i].onmouseover = function() {
@@ -1359,23 +1360,15 @@
         if(!isExtend) {
           backupModalHTML = obj.innerHTML;
 
-          obj.innerHTML = "<img src='" + targetImg.src + "'style='width: 90%; padding-bottom: 100px;' onclick='extendImage(this);'>";
+          obj.innerHTML = "<img src='" + targetImg.src + "'style='max-width: 100%; padding-top: 5%; cursor: zoom-out;' onclick='extendImage(this);'>";
           obj.style.textAlign = "center";
-
-          // obj.style.position = "relative";
-          // obj.parentElement.style.display = "table-cell";
-          // obj.parentElement.style.verticalAlign = "middle";
-          // obj.parentElement.parentElement.style.display = "table";
-
-          // obj.style.position = "static";
-          // obj.parentElement.style.overflowX = "scroll";
-          // obj.parentElement.parentElement.style.overflowX = "scroll";
-          // obj.parentElement.parentElement.style.overflowY = "auto";
-          // obj.parentElement.style.width = "auto";
-
-          obj.style.top = "100px";
-          obj.style.left = "0";
-          obj.style.position = "fixed";
+          obj.style.display = "block";
+          obj.style.margin = "0 auto";
+          // obj.style.position = "fixed";
+          // obj.style.top = "50%";
+          // obj.style.left = "10px";
+          // obj.style.right = "10px";
+          // obj.style.transform = "translateY(-50%)";
           obj.parentElement.style.overflowX = "hidden";
           obj.parentElement.style.overflowY = "auto";
           obj.parentElement.parentElement.style.cursor = "zoom-out";
@@ -1388,9 +1381,13 @@
         else {
           obj.innerHTML = backupModalHTML;
 
-          obj.style.top = null;
-          obj.style.left = null;
-          obj.style.position = null;
+          obj.style.textAlign = null;
+          obj.style.margin = null;
+          // obj.style.position = null;
+          // obj.style.top = null;
+          // obj.style.left = null;
+          // obj.style.right = null;
+          // obj.style.transform = null;
           obj.parentElement.style.overflowX = null;
           obj.parentElement.style.overflowY = null;
           obj.parentElement.parentElement.style.cursor = null;
