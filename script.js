@@ -100,7 +100,7 @@ function menuTopDropdown() {
   // if (z.innerHTML === "☰") {
     m.style.display = "block";
     y.style.display = "block";
-    z.innerHTML = "☰";
+    z.innerHTML = "≡";
   } else {
     m.style.display = "none";
     y.style.display = "none";

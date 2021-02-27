@@ -137,18 +137,6 @@ a:visited {
   line-height: 1.5;
   color: #fefefe;
 }
-
-/* .detail-font-sub {
-font-family: aktiv-grotesk-extended, sans-serif;
-font-weight: 300;
-font-style: normal;
-  font-size: 0.9rem;
-line-height: 1.53;
-letter-spacing: 0.3px;
-
-  color: #fafafa;
-} */
-
 .detail-font-sub {
   font-family: gopher, sans-serif;
   font-weight: 300;
@@ -159,21 +147,6 @@ letter-spacing: 0.3px;
   letter-spacing: 0.5px;
   color: #fafafa;
 }
-
-/* .detail-font-sub {
-  font-family: gopher, sans-serif;
-  font-weight: 300;
-  font-style: no
-  rmal;
-  /*detail*/
-  /* font-size: 1rem; */
-  font-size: 0.92rem;
-   line-height: 1.53;
-  /* letter-spacing: 0.5px; */
-  letter-spacing: 0.2px;
-  color: #fafafa;
-} */
-
 .detail-font-sub-ko {
   font-family: Noto Sans KR, sans-serif;
   font-weight: 300;
@@ -422,6 +395,8 @@ letter-spacing: 0.3px;
   display: none;
   position: fixed;
   top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   z-index: 5;
   user-select: none;
   -webkit-user-select: none;
@@ -466,26 +441,8 @@ letter-spacing: 0.3px;
   opacity: 0.3;
 }
 
-/* Modal_img_single */
-.modal-img-single {
-  display: grid;
-  position: fixed;
-  top: 50%;
-  left:10px;
-  right:10px;
-  grid-template-columns: 100%;
-  background-color: transparent;
-  padding: 0;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1000px;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-}
 
 /* Modal_img_multiple */
-
-
 img:hover {
   cursor: zoom-in;
 }
@@ -637,6 +594,23 @@ img.right {
   height: 50px;
   width: auto;
   cursor: default;
+}
+
+/* Modal_img_single */
+.modal-img-single {
+  display: grid;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left:10px;
+  right:10px;
+  grid-template-columns: 100%;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
 }
 
 .modal-1 {
