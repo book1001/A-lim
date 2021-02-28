@@ -283,13 +283,69 @@ $(window).on('mousewheel', function(e){
 
   if(isShowMenu) {
     if(wheel<0 && current>1) {
-      $("#menu-bottom").fadeOut( 200, 'linear');
+      $('#menu-bottom').animate({opacity: "0"}, 150);
+      // $("#menu-bottom").fadeOut( 200, 'linear');
     }
     else {
-      $("#menu-bottom").fadeIn( 200, 'linear');
+      $('#menu-bottom').animate({opacity: "1"}, 150);
+      // $("#menu-bottom").fadeIn( 200, 'linear');
     }
   }
 });
+
+$(window).on('scrollstart', function(){
+  if(isShowMenu) {
+    console.log("Hello");
+      $('#menu-bottom').animate({opacity: "0.5"}, 150);
+  }
+});
+
+$(window).on('touchstart', function(){
+  if(isShowMenu) {
+    console.log("Hello");
+      $('#menu-bottom').animate({opacity: "0"}, 150);
+  }
+});
+
+
+// $(window).scroll(function(e){
+//
+//   var scrollTop = $(this).scrollTop();
+//   var innerHeight = $(this).innerHeight();
+//   var scrollHeight = $(this).prop('scrollHeight');
+//
+//   if(isShowMenu) {
+//     if (scrollTop + innerHeight >= scrollHeight) {
+//       console.log("1");
+//       $('#menu-bottom').animate({opacity: "0"}, 150);
+//     }
+//     else if (scrollTop + innerHeight < scrollHeight) {
+//       console.log("2");
+//       $('#menu-bottom').animate({opacity: "1"}, 150);
+//     }
+//   }
+// });
+
+
+// $(function(){
+//   var FirstScroll = 0;
+//   var prevScrollTop = $(window).scrollTop(),
+//     tp = $(window).scrollTop();
+//
+//     $(window).scroll(function(e){
+//       tp = $(this).scrollTop();
+//
+//       if ( tp > prevScrollTop ){
+//         $('#menu-bottom').animate({opacity: "0"}, 150);
+//       }
+//       else if( tp <= prevScrollTop ) {
+//         $('#menu-bottom').animate({opacity: "1"}, 150);
+//       }
+//
+//       prevScrollTop = tp;
+//   });
+// });
+
 
 
 
