@@ -1,7 +1,7 @@
 body {
   background-color: black;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch; /*iPad Modal 터치 버벅임 해결 */
+  -webkit-overflow-scrolling: touch; /*iPad Modal 터치 버벅임 해제 */
 }
 
 /* Scrollbar */
@@ -237,6 +237,12 @@ a:visited {
   outline: none;
   padding: 0;
   background-color: transparent;
+}
+
+#menuTopUnderline > .menu-top > .text-align-left > button.btn:hover {
+  box-shadow: inset 0 -2px 0 0 white;
+  transition: 0.15s linear;
+  cursor: pointer;
 }
 
 #menuTopUnderline > .menu-top > .text-align-center > button.btn:hover {
