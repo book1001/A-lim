@@ -1371,6 +1371,7 @@
           // obj.style.transform = "translateY(-50%)";
           obj.parentElement.style.overflowX = "hidden";
           obj.parentElement.style.overflowY = "auto";
+          obj.parentElement.style.touchAction = "none";
           obj.parentElement.parentElement.style.cursor = "zoom-out";
           document.getElementById("close").style.display = "none";
           document.getElementById("prev").style.display = "none";
@@ -1390,6 +1391,7 @@
           // obj.style.transform = null;
           obj.parentElement.style.overflowX = null;
           obj.parentElement.style.overflowY = null;
+          obj.parentElement.style.touchAction = null;
           obj.parentElement.parentElement.style.cursor = null;
           document.getElementById("close").style.display = "block";
           document.getElementById("prev").style.display = "block";

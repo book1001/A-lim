@@ -258,10 +258,10 @@ $(window).on('mousewheel',function(e){
 });
 
 
-// 아이패드 되는지 확인필요
-$(window).on('swipe', function() {
-    $("#menu-bottom").fadeOut( 200, 'linear');
-});
+// // 아이패드 되는지 확인필요
+// $(window).on('swipe', function() {
+//     $("#menu-bottom").fadeOut( 200, 'linear');
+// });
 
 
 //Touch 이벤트시 Prev, Next의 Hover 투명도 없앰
