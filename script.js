@@ -111,21 +111,19 @@ function menuTopDropdown() {
   var m = document.getElementById("menuTopMobileSub");
   var y = document.getElementById("paddingMenuTop");
   var z = document.getElementById("btnDropdown");
+  var x = window.matchMedia("screen and (max-width:450px),(max-height:450px)")
 
-  if (m.style.display === "none") {
-  // if (z.innerHTML === "☰") {
-    m.style.display = "block";
-    y.style.display = "block";
-    z.innerHTML = "≡";
-  } else {
-    m.style.display = "none";
-    y.style.display = "none";
-    z.innerHTML = "-";
-    // z.innerHTML = "⁻";
-    // y.innerHTML = "☰";
-    // y.innerHTML = "−";
-    // y.innerHTML = "∥";
-    // z.style.color = "#fefefe";
+  if (x.matches) {
+    if (m.style.display === "none") {
+      m.style.display = "block";
+      y.style.display = "block";
+      z.innerHTML = "≡";
+    } else {
+      m.style.display = "none";
+      y.style.display = "none";
+      z.innerHTML = "-";
+      // z.innerHTML = "⁻☰−∥";
+    }
   }
 }
 
