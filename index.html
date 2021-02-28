@@ -1220,20 +1220,17 @@
 
             for(var j=0; j<thumbnailViewItem.length; j++) {
               var img = thumbnailViewItem[j].getElementsByTagName("div")[0].getElementsByTagName("button")[0].getElementsByTagName("img")[0];
-
               if(this.outerHTML.includes("'" + img.id + "'") && isShow) {
                 menus[j].style.paddingBottom = "4px";
                 menus[j].style.boxShadow = "inset 0px -2px 0 0 white";
                 menus[j].style.transition = "0.15s linear";
-                thumbnailViewItem[j].style.filter = "";
-                thumbnailViewItem[j].style.opacity = "";
                 // thumbnailViewItem[j].style.border = "1.7px solid #fefefe";
                 // thumbnailViewItem[j].style.borderRadius = "20px";
                 // thumbnailViewItem[j].style.animation = "shake 0.5s";
                 // thumbnailViewItem[j].style.animationIterationCount = "infinite";
                 // thumbnailViewItem[j].style.background = "radial-gradient(circle, rgba(255,250,0,1) 10%, rgba(255,246,0,0) 40%)";
-                thumbnailViewItem[j].style.transition = "0.1s linear";
-                thumbnailViewItem[j].style.transform = "scale(1.18)";
+                img.style.transition = "0.1s linear";
+                img.style.transform = "scale(1.18)";
               } else {
                 // thumbnailViewItem[j].style.filter = "blur(9px)";
                 // thumbnailViewItem[j].style.opacity = "0.5";
@@ -1250,14 +1247,12 @@
                 menus[j].style.paddingBottom = "0";
                 menus[j].style.boxShadow = "inset 0px 0px 0 0 white";
                 menus[j].style.transition = "0s linear";
-                thumbnailViewItem[j].style.filter = "";
-                thumbnailViewItem[j].style.opacity = "";
                 // thumbnailViewItem[j].style.animation = "";
                 // thumbnailViewItem[j].style.animationIterationCount = "";
                 // thumbnailViewItem[j].style.border = "0px solid #fefefe";
                 // thumbnailViewItem[j].style.background = "transparent";
-                thumbnailViewItem[j].style.transition = "0.2s linear";
-                thumbnailViewItem[j].style.transform = "scale(1)";
+                img.style.transition = "0.2s linear";
+                img.style.transform = "";
           }
         }
       }
