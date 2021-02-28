@@ -9,7 +9,7 @@ var isIE = userAgent.indexOf('Trident');
 
 // 익스플로러 브라우저 체크
 if(isIE > -1){
-    window.location.href="http://leehalim.com/indexie.html"
+    window.location.href="indexie.html"
 }
 
 // // 크로미움 브라우저가 아닌 경우 체크
