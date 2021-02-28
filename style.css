@@ -295,6 +295,7 @@ a:visited {
 .filterDiv {
   cursor: default;
   opacity: 20%;
+  -webkit-opacity: 20%;
   filter: blur(9px);
   -webkit-filter: blur(9px);
   margin-left: auto;
@@ -303,6 +304,7 @@ a:visited {
 .show {
   cursor: pointer;
   opacity: 100%;
+  -webkit-opacity: 100%;
   filter: blur(0px);
   -webkit-filter: blur(0px);
   transition: 0.3s linear;
