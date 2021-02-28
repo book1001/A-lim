@@ -21,25 +21,25 @@ for (var i = 0; i < btns.length; i++) {
 $(document).ready(function(){
   $grid.masonry('layout');
 
-  $(".menu-top > .text-align-right").click(function(){
+  $(".menu-top > .text-align-right > .btn").click(function(){
     $("#thumnailView").hide();
     $("#about").show();
     $grid.masonry('layout');
   });
 
-  $(".menu-top > .text-align-center").click(function(){
+  $(".menu-top > .text-align-center > .btn").click(function(){
     $("#thumnailView").show();
     $("#about").hide();
     $grid.masonry('layout');
   });
 
-  $(".menu-top-mobile > .text-align-right").click(function(){
+  $(".menu-top-mobile > .text-align-right > .btn").click(function(){
     $("#thumnailView").hide();
     $("#about").show();
     $grid.masonry('layout');
   });
 
-  $(".menu-top-mobile-sub > .text-align-center").click(function(){
+  $(".menu-top-mobile-sub > .text-align-center > .btn").click(function(){
     $("#thumnailView").show();
     $("#about").hide();
     $grid.masonry('layout');
@@ -244,24 +244,28 @@ function filterSelection(c) {
 // }
 
 
-//스크롤 끝까지 내리면 Bottom Menu 삭제함
-$(window).on('mousewheel',function(e){
-    var wheel = e.originalEvent.wheelDelta;
-    var current = $(window).scrollTop();
-    if(wheel<0){
-        if(current>1){
-           $("#menu-bottom").fadeOut( 200, 'linear');
-         }
-    }else{
-      $("#menu-bottom").fadeIn( 200, 'linear');
-    }
+
+// 스크롤 끝까지 내리면 Bottom Menu 삭제함
+var isShowMenu = $("#menu-bottom").css("display") == "block";
+
+$(window).resize(function() {
+  isShowMenu = $("#menu-bottom").css("display") == "block";
 });
 
+$(window).on('mousewheel', function(e){
+  var wheel = e.originalEvent.wheelDelta;
+  var current = $(window).scrollTop();
 
-// // 아이패드 되는지 확인필요
-// $(window).on('swipe', function() {
-//     $("#menu-bottom").fadeOut( 200, 'linear');
-// });
+  if(isShowMenu) {
+    if(wheel<0 && current>1) {
+      $("#menu-bottom").fadeOut( 200, 'linear');
+    }
+    else {
+      $("#menu-bottom").fadeIn( 200, 'linear');
+    }
+  }
+});
+
 
 
 //Touch 이벤트시 Prev, Next의 Hover 투명도 없앰
