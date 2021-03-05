@@ -283,12 +283,12 @@ $(window).on('mousewheel', function(e){
 
   if(isShowMenu) {
     if(wheel<0 && current>1) {
-      $('#menu-bottom').animate({opacity: "0"}, 150);
-      // $("#menu-bottom").fadeOut( 200, 'linear');
+      // $('#menu-bottom').animate({opacity: "0"}, 150);
+      $("#menu-bottom").fadeOut( 200, 'linear');
     }
     else {
-      $('#menu-bottom').animate({opacity: "1"}, 150);
-      // $("#menu-bottom").fadeIn( 200, 'linear');
+      // $('#menu-bottom').animate({opacity: "1"}, 150);
+      $("#menu-bottom").fadeIn( 200, 'linear');
     }
   }
 });
