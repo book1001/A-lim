@@ -4,11 +4,9 @@ var h = 300;
 function setup() {
 
   //Random words, Random images
-  let words = ['able', 'apple', 'dog', 'ball', 'clip', 'gun', 'plane'];
-  let pix = ['able.png', 'apple.png', 'dog.png', 'ball.png', 'clip.png', 'gun.png', 'plane.png'];
+  let words = ['apple', 'dog', 'ball', 'clip', 'gun', 'plane'];
+  let pix = ['apple.png', 'dog.png', 'ball.png', 'clip.png', 'gun.png', 'plane.png'];
   let site = [
-    '<iframe src="able.html" width="100%" height="100"' +
-      'frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>',
     '<iframe src="apple.html" width="100%" height="100"' +
         'frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>',
     '<iframe src="dog.html" width="100%" height="100"' +
@@ -23,7 +21,7 @@ function setup() {
         'frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>',
     ];
 
-  let refresh = [0, 1, 2, 3, 4, 5, 6]; //increase the more options you have
+  let refresh = [0, 1, 2, 3, 4, 5]; //increase the more options you have
 
   //Random choice: Draw random words, random images
   let choice = random(refresh);
