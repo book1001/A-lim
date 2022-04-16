@@ -1,0 +1,258 @@
+#content, html, body {
+   width: 100%;
+    height: 100%;
+}
+
+#column3 {
+    float: right;
+    width: 15%;
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 5
+}
+
+#column0 {
+    float: left;
+    width: 85%;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 3
+    /* pointer-events: none; */
+}
+
+#column1 {
+    float: left;
+    width: 8%;
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#column2 {
+    float: left;
+    width: 77%;
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* #main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+}
+
+.left_column {
+    width: 40px;
+    height: 100%;
+    float: left;
+    background: yellow;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.wrapper {
+    height: 100%;
+    background: red;
+    overflow: hidden;
+}
+
+.center_column {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: blue;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.group:before, .group:after { content: ""; display: table; }
+.group:after { clear: both; }
+.group { zoom: 1; } */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; /*iPad Modal 터치 버벅임 해제 */
+}
+
+
+
+.menu-top-video {
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  padding: 10px 80px 20px 80px;
+  z-index: 2;
+  /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); */
+}
+
+.video-thumbnail-view {
+ margin: 0 auto;
+}
+
+.video-thumbnail-view-sizer {
+  width: 100%;
+}
+
+.video-thumbnail-view-item {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+
+.video-filterDiv {
+  cursor: default;
+  opacity: 20%;
+  -webkit-opacity: 20%;
+  display:none;
+  filter: blur(9px);
+  -webkit-filter: blur(9px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show {
+  /* cursor: pointer; */
+  opacity: 100%;
+  -webkit-opacity: 100%;
+  display:block;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transition: 0.3s linear;
+}
+
+
+
+/* Modal_img_multiple */
+img:hover {
+  cursor: default;
+}
+
+img.modal-img-deco {
+  pointer-events: none;
+}
+
+img.modal-img-deco:hover {
+  cursor: default;
+}
+
+img.video_preview_center:hover {
+  cursor: pointer;
+}
+
+
+
+.video_preview_center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #000000;
+}
+
+
+.video_padding_top{
+  height: 100px;
+  width: auto;
+  cursor: default;
+}
+
+.iframe_video_margin {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.iframe_video:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+
+
+
+
+/* Responsive layout */
+
+@media only screen and (max-width:1124px) {
+  #column0 {
+    /* display:none; */
+    width: 100%;
+  }
+
+  #column1 {
+    display:none;
+    width: 0%;
+  }
+
+  #column2 {
+    width: 100%;
+  }
+
+  #column3 {
+    display:none;
+    width: 0%;
+  }
+
+  .text-align-left{
+    display:none;
+  }
+
+  .menu-top {
+    grid-template-columns: auto;
+  }
+
+  .video_padding_top{
+    height: 160px;
+  }
+
+}
+
+@media only screen and (max-width:800px) {   /* For tablets: */
+
+}
+
+@media only screen and (max-width:600px),(max-height:700px) {   /* For tablets: */
+
+}
+
+@media only screen and (max-width:450px) {   /* For tablets: */
+  #btnDropdown {
+    display: none;
+  }
+
+  .text-align-right{
+    display:none;
+  }
+
+  .video_padding_top{
+    height: 83px;
+  }
+}
