@@ -196,6 +196,27 @@ img.video_preview_center:hover {
 }
 
 
+/* Font */
+
+.about-font {
+  font-size: 1.8rem;
+  line-height: 1.43;
+}
+
+/* Layout */
+
+.modal-AndOn {
+  display: grid;
+  grid-template-columns: 22.86% 22.86% 22.86% 31.42%;
+  padding: 0 0 0 0;
+  background-color: transparent;
+}
+
+.modal-AndOn-padding {
+  width:90%;
+  border: 0px;
+  padding: 0px 10px 0px 10px;
+}
 
 
 
@@ -231,6 +252,10 @@ img.video_preview_center:hover {
 
   .video_padding_top{
     height: 160px;
+  }
+
+  .modal-AndOn {
+    display: none;
   }
 
 }
