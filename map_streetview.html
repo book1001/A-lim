@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>ㅤ</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,12 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="script_maps_streetview.js"></script>
+    <!-- <script type="module" src="script_maps_streetview.js"></script> -->
     <!-- <script type="module" src="script_maps_search.js"></script> -->
   </head>
 
   <body>
-    <div id="map"></div>
+    <iframe src="map_location.html" style="border:0; z-index:9; position: fixed; top: 0; left: 200px; width: 300px; height: 150px;" frameborder="0"></iframe>
+    <script type="module" src="script_maps_streetview.js"></script>
+
+
+
+    <div id="street-view"></div>
     <!-- <div id="map"></div> -->
     <!-- <img class="eyeview" src="./images_info/eyeview1.png"> -->
 
@@ -29,8 +34,9 @@
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp7HDe2bCF_67OXszDIycB3PQds-4jr5A&callback=initMap&v=weekly" defer></script> -->
 
 
-    <!-- Sound -->
 
+
+    <!-- Sound -->
     <iframe src="./sound/silence.mp3" type=”audio/mp3″ allow="autoplay" id="audio" style="display: none"></iframe>
     <audio autoplay loop>
     <!-- <source src="./sound/wind1.wav" type="audio/mp3"> -->
