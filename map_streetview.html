@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🌎</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_maps_streetview.css">
+    <link rel="stylesheet" href="style_scrolling.css">
+    <link rel="stylesheet" href="style_cloud.css">
+    <link rel="stylesheet" href="style_cloud_sprite.css">
+    <link rel="stylesheet" href="style_modal.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ewy8kjf.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="script_maps_streetview.js"></script>
+  </head>
+
+  <body>
+    <div id="street-view"></div>
+    <!-- <img class="eyeview" src="./images_info/eyeview1.png"> -->
+
+    <!--
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&callback=initialize&v=weekly" defer></script>
+
+  </body>
+</html>
