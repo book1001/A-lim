@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>🌎</title>
+    <title>ㅤ</title>
     <link rel="shortcut icon" href="favicon.ico">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,19 +17,24 @@
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script type="module" src="script_maps_streetview.js"></script>
+    <!-- <script type="module" src="script_maps_search.js"></script> -->
   </head>
 
   <body>
-    <div id="street-view"></div>
+    <div id="map"></div>
+    <!-- <div id="map"></div> -->
     <!-- <img class="eyeview" src="./images_info/eyeview1.png"> -->
 
-    <!--
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&callback=initialize&v=weekly" defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp7HDe2bCF_67OXszDIycB3PQds-4jr5A&callback=initMap&v=weekly" defer></script> -->
+
+
+    <!-- Sound -->
+
+    <iframe src="./sound/silence.mp3" type=”audio/mp3″ allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio autoplay loop>
+    <!-- <source src="./sound/wind1.wav" type="audio/mp3"> -->
+    </audio>
 
   </body>
 </html>
