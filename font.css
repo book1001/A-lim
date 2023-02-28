@@ -76,6 +76,11 @@ a {
   color: #b2b2b2;
 }
 
+/* a:hover{
+  color: #00cc00;
+} */
+
+
 /* En . Ko ================================================ */
 #Ko {
   display: none;
@@ -212,8 +217,9 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: #b2b2b2;
   /* color: #f0f0f0; */
-  color: rgb(255,255,0,1);
+  /* color: rgb(255,255,0,1); */
 }
 
 
