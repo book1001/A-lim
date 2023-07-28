@@ -133,7 +133,8 @@ img.right {
     overflow-y: auto;
     transition: all .3s ease;
     background-color: transparent;
-    color: #f0f0f0;
+    color: #ffffff;
+    /* color: #f0f0f0; */
 }
 
 .col2-1-class.active div {

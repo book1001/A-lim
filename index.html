@@ -117,7 +117,7 @@
           <div class="aboutview_YY">
             <div class="font-description">2023</div>
             <div class="font-description">DM-1563 ✕ GRAPH-1563 Tools Upside Down — 2023 Wintersession | Rhode Island School of Design, RI, US
-              <br><a href="http://toolsupsidedown.com" target="_blank">toolsupsidedown.com</a>
+              <br><a href="http://toolsupsidedown.com" target="_blank">–toolsupsidedown.com</a>
             </div>
           </div>
         </div>
@@ -363,10 +363,41 @@
           </div>
         </div> -->
 
+
+        <script>
+          function showImage(elemId, imgSrc) {
+            const elem = document.getElementById(elemId);
+            const popImage = new Image();
+            popImage.src = imgSrc;
+            popImage.style.position = "absolute";
+            popImage.style.zIndex = "1";
+            // popImage.style.top = "0px";
+            popImage.style.width = "100px";
+            elem.appendChild(popImage);
+          }
+          function hideImage(elemId) {
+            const elem = document.getElementById(elemId);
+            while (elem.childElementCount > 0) {
+              elem.removeChild(elem.lastChild);
+            }
+          }
+        </script>
+
         <div>
           <div data-scroll="sec_FrozenIslandLive" href="#sec_FrozenIslandLive" class="col2-1-class desc-filter books digital google 2023">
             <div class="font-description">
-              “Frozen Island. Live” translates “<button onclick="location.href='#filter_FrozenIsland'" class="font-description-btn">Frozen Island</button> (<button onclick="window.open('http://frozenisland.live','_blank')" class="font-description-btn" style="color:#339EFF;">frozenisland.live</button>)” into a publication. As a gift from “Frozen Island,” a set of perforated, lick-and-stick stamps is presented on its cover. 
+              <!-- <button
+                id="imageSmall"
+                class="font-description-btn"
+                onmouseover="showImage('imageSmall','./image_previews/Preview_2023_FrozenIslandLive.png')"
+                onmouseout="hideImage('imageSmall')"
+                onclick="location.href='#filter_FrozenIslandLive'"
+              >
+                Hover for small image
+              </button> -->
+              
+
+              This publication translates <button onclick="location.href='#filter_FrozenIsland'" class="font-description-btn">“Frozen Island”</button> <button onclick="window.open('http://frozenisland.live','_blank')" class="font-description-btn">(–frozenisland.live)</button> into a physical form. As a gift from <button onclick="location.href='#filter_FrozenIsland'" class="font-description-btn">“Frozen Island”</button>, a set of perforated, lick-and-stick stamps is presented on its cover. 
               <br><br>
               <img src="./image_details/Detail_2023_FrozenIslandLive_tagging.gif" style="width: 100%; display: block;">
               <br>
@@ -374,6 +405,7 @@
               <br><br>
               The oval circles used throughout “Frozen Island. Live” are indicative of the Earth, the viewing eyes of users, and the idea of a portal.
               <br><br>
+              <!-- The oval circles used throughout Frozen Island. Live<img src="./image_previews/Preview_2023_FrozenIslandLive.png" style="display:inline; width: 30px; height: 18.72px; vertical-align: middle;"> are indicative of the Earth, the viewing eyes of users, and the idea of a portal. -->
             </div>
           </div>
         </div>
@@ -381,13 +413,13 @@
         <div>
           <div data-scroll="sec_TUD" href="#sec_TUD" class="col2-1-class desc-filter digital 2023">
             <div class="font-description">
-              "Tools Upside Down" was a Wintersession course taught at Rhode Island School of Design in 2023. This class website was designed to enhance the creative environment which was one of the necessary footholds of the class.
+              “Tools Upside Down” was a Wintersession course taught at Rhode Island School of Design in 2023. This class website was designed to enhance the creative environment which was one of the necessary footholds of the class.
               <br><br>
               As an open canvas, anyone can type what they want on the website. During the class, it was used as a chat room, drawing tool, sign-up sheet, Q&A, and a space to complain about being hungry. Further, this website encourages visitors to connect with students and their work. When visitors click on the names floating on the website, they can visit students' Instagram pages.
               <br><br>
               In addition to these social purposes, it was utilized as a shortcut to collect class materials that are scattered in Google Drives and Are.na.
               <br><br>
-              <button onclick="window.open('http://toolsupsidedown.com','_blank')" class="font-description-btn" style="color:#00cc00;">toolsupsidedown.com</button>
+              <button onclick="window.open('http://toolsupsidedown.com','_blank')" class="font-description-btn">–toolsupsidedown.com</button>
               <br><br>
               <!-- <img src="./image_details/Detail_2023_TUD_type_1.gif" style="width: 62%; display: block;"> -->
               <!-- <img src="./image_details/Detail_2023_TUD_doodle_1.png" style="width: 62%; display: block;"> -->
@@ -397,7 +429,7 @@
                 <br>
                 Course Description ↓
                 <br><br>
-                "Tools Upside Down" discovers new ways to use tools by hacking, twisting, and flipping them. Including contemporary digital tools, students will be encouraged to bring the tools from their own fields of expertise. By exploring and subverting all the tools we use, the course places a strong emphasis on experimental processes and outcomes.
+                “Tools Upside Down” discovers new ways to use tools by hacking, twisting, and flipping them. Including contemporary digital tools, students will be encouraged to bring the tools from their own fields of expertise. By exploring and subverting all the tools we use, the course places a strong emphasis on experimental processes and outcomes.
                 <br><br>
                 Co-taught with <button onclick="window.open('https://dowonyoo.com','_blank')" class="font-description-btn">Dowon Yoo</button>
                 <br><br>
@@ -422,7 +454,7 @@
             <div id="En" class="font-description">
               We are often deprived of the opportunity to define ourselves and who we are. As you are the master of your own life and destiny, you alone have the right to define yourself.
               <br><br>
-              My font, called "i.Am," supports one’s right to self-expression, liberty, and uniqueness.
+              My font called “i.Am” supports one’s right to self-expression, liberty, and uniqueness.
               <br><br>
               This piece was honored with the Certificate of Typographic Excellence at TDC 67 Communication Design Competition.
               <br><br>
@@ -455,9 +487,7 @@
               <br><br>
               The barcodes are made of ink and printed on paper. However, when they are scanned, the scattered ink is transformed into a non-physical form of sound. Digital codes compress lots of data into a single easily scannable form, enabling vast amounts of information to be quickly accessible. I believe this is the essence of digitization. This new digital instrument compresses the heavy musical instruments onto a single piece of paper, exemplifying the core of digitization.
               <br><br>
-              <p style="color: #b2b2b2">
-                <button onclick="window.open('https://vimeo.com/41132461','_blank')" class="font-description-btn">The first Barcode Band project</button> was made in 2012 with Woonjin Kang and Yongduk Kim. This is the project that I later developed into a portable version.
-              </p>
+              <button onclick="window.open('https://vimeo.com/41132461','_blank')" class="font-description-btn">The first Barcode Band project</button> was made in 2012 with Woonjin Kang and Yongduk Kim. This is the project that I later developed into a portable version.
               <br><br>
               <!-- <img src="./image_details/Detail_2018_BarcodeBand_instrument_1.png" style="width: 70%; display: block;">
               <br>
@@ -515,7 +545,7 @@
               <br><br>
               <img class="center" src="./image_details/Detail_2022_DotDotDot_iPhone_glass.gif" style="width: 60%; display: block;">
               <br>
-              For the second practice, I applied a little glass to the app and generated pixelated images. In order to represent the aesthetic of the practice, I created a script (<button onclick="location.href='#filter_NemoNemo'" class="font-description-btn">Nemo Nemo</button>) that can generate pixelated images and applied the code to the compositions created in the first practice.
+              For the second practice, I applied a little glass to the app and generated pixelated images. In order to represent the aesthetic of the practice, I created a script <button onclick="location.href='#filter_NemoNemo'" class="font-description-btn">“Nemo Nemo”</button> that can generate pixelated images and applied the code to the compositions created in the first practice.
               <br><br>
             </div>
           </div>
@@ -641,7 +671,7 @@
               <br><br>
               <img src="./image_details/Detail_2021_IceAndFire_animated.gif" style="width: calc(100% - 10px); display: block;">
               <br>
-              The facial expressions of the generated images reminded me of the sense of madness I felt when watching “Game of Thrones.” As a result, I named my book after the original novel behind the TV series – “A Song of Ice and Fire.”
+              The facial expressions of the generated images reminded me of the sense of madness I felt when watching “Game of Thrones.” As a result, I named my book after the original novel behind the TV series — “A Song of Ice and Fire.”
               <br><br>
             </div>
           </div>
@@ -676,7 +706,7 @@
         <div>
           <div data-scroll="sec_Five_sketch2" href="#sec_Five_sketch2" class="col2-1-class desc-filter illustration 2019">
             <div class="font-description">
-              The initial illustrations for “<button onclick="location.href='#filter_Five'" class="font-description-btn">Five</button>”
+              The initial illustrations for <button onclick="location.href='#filter_Five'" class="font-description-btn">“Five”</button>
               <br><br>
             </div>
           </div>
@@ -851,7 +881,7 @@
             <div class="mobileView font-description">
               <img class="center" src="./image_details/Detail_2023_FrozenIslandLive_tagging.gif" style="width: 50%; display: block;">
               <br><br>
-              “Frozen Island. Live” translates “<button onclick="location.href='#filter_FrozenIsland'" class="font-description-btn" style="color:#f0f0f0;">Frozen Island</button> (<button onclick="window.open('http://frozenisland.live','_blank')" class="font-description-btn" style="color:#339EFF;">frozenisland.live</button>)” into a publication. As a gift from “Frozen Island,” a set of perforated, lick-and-stick stamps is presented on its cover. 
+              “Frozen Island. Live” translates “<button onclick="location.href='#filter_FrozenIsland'" class="font-description-btn" style="color:#f0f0f0;">Frozen Island</button> (<button onclick="window.open('http://frozenisland.live','_blank')" class="font-description-btn" style="color:#f0f0f0;">frozenisland.live</button>)” into a publication. As a gift from “Frozen Island,” a set of perforated, lick-and-stick stamps is presented on its cover. 
               <br><br>
               Each stamp is a mini-portal that takes readers to surprising moments on Google Maps. By tagging the stamp with their phones, people can travel to strange and beautiful places in the world.
               <br><br>
@@ -893,7 +923,7 @@
               <br><br>
               In addition to these social purposes, it was utilized as a shortcut to collect class materials that are scattered in Google Drives and Are.na.
               <br><br>
-              <button onclick="window.open('http://toolsupsidedown.com','_blank')" class="font-description-btn" style="color:#00cc00;">toolsupsidedown.com</button>
+              <button onclick="window.open('http://toolsupsidedown.com','_blank')" class="font-description-btn" style="color:#f0f0f0;">toolsupsidedown.com</button>
               <br><br>
               <!-- <img src="./image_details/Detail_2023_TUD_type_1.gif" style="width: 62%; display: block;"> -->
               <!-- <img src="./image_details/Detail_2023_TUD_doodle_1.png" style="width: 62%; display: block;"> -->

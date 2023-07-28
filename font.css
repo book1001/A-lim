@@ -23,6 +23,7 @@
 @font-face {
   font-family: 'NeueHaasGrotesk';
   src: url('./font/NeueHaasGroteskText-Regular.woff') format('woff');
+  src: url('./font/NeueHaasGroteskText-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'icons';
@@ -76,9 +77,10 @@ a {
   color: #b2b2b2;
 }
 
-/* a:hover{
-  color: #00cc00;
-} */
+a:hover{
+  color: #565656;
+  /* color: #00cc00; */
+}
 
 
 /* En . Ko ================================================ */
@@ -211,16 +213,27 @@ a {
   font-family: NeueHaasGrotesk,sans-serif;
   font-weight: lighter;
   font-size: 18.72px;
-
   margin: 0;
   padding: 0;
   border: none;
-  background-color: transparent;
   cursor: pointer;
+  background-color: transparent;
   color: #b2b2b2;
-  /* color: #f0f0f0; */
-  /* color: rgb(255,255,0,1); */
 }
+
+.font-description-btn:hover {
+  color: #565656;
+  /* filter: blur(4px); */
+  /* color: #00ff00; */
+  /* text-shadow: rgba(255,255,255,1) 0px 0px 17px; */
+}
+
+/* .font-description-btn img:hover{
+  -webkit-transform: scale(5);
+  -ms-transform: scale(5);
+  transform: scale(5);
+  transition: 0.3s ease;
+  } */
 
 
 /* font: description ================================================ */
