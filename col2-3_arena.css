@@ -1,0 +1,260 @@
+/* ============================================================================== */
+/* backup for Are.na stylesheet: https://www.are.na/halim-lee/archive-hebbgnbzq4q */
+/* ============================================================================== */
+
+
+/* font: import ================================================ */
+
+@font-face {
+  font-family: 'NeueHaasGrotesk';
+  src: url('https://leehalim.com/font/NeueHaasGroteskText-Regular.woff') format('woff');
+  src: url('https://leehalim.com/font/NeueHaasGroteskText-Regular.woff2') format('woff2');
+}
+
+
+/* Variable ================================================ */
+
+:root {
+  --scrollbar-width: 20px;
+  --scrollbar-right: 8px;
+  --scrollbar-left: 9px;
+
+  --col1-width: 140px;
+  --col2-1-width: 310px;
+  --col2-extra: 3px;
+  --col3-width: 15%;
+  --col4-width: 120px; /* = --col1-width - --scrollbar-widt */
+}
+
+
+/* Scrollbar ================================================ */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track { /* Track */
+  /* background: url(./test/test.svg) no-repeat; */
+  background: transparent;
+}
+::-webkit-scrollbar-thumb { /* Handle */
+  background: #b2b2b2;
+  /* border-radius: 20px; */
+  background-clip: padding-box;
+  /* border: 8px solid transparent; */
+  border-top: 0px solid transparent;
+  border-right: var(--scrollbar-right) solid transparent;
+  border-bottom: 0px solid transparent;
+  border-left: var(--scrollbar-left) solid transparent;
+}
+
+
+/* Layout ================================================ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  line-height: 1.5;
+}
+
+
+/* Blocks ================================================ */
+
+#blocks {
+  display: grid;
+  margin: 0;
+  margin: 141px 0 0 0;
+  padding-bottom: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  /* grid-template-columns: 1fr repeat(2, 1fr);  */
+  column-gap: 20px;
+  row-gap: 20px;
+  font-size: 0;
+}
+
+#blocks div {
+  padding: 0;
+  color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* border-top: 1px solid #ffffff;
+  padding-top: 30px; */
+}
+
+#blocks div::-webkit-scrollbar {
+  width: var(--scrollbar-width) !important;
+}
+
+#blocks div:nth-child(1) {
+  display: none;
+  visibility: hidden;
+  /* margin-bottom: 42px; */
+}
+
+/* #blocks div:nth-child(1),
+#blocks div:nth-child(2),
+#blocks div:nth-child(3) {
+  border-top: 1px solid #ffffff;
+} */
+
+/* #blocks div:nth-child(1) {
+  position: fixed;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  padding-top: 10px;
+  mix-blend-mode: difference;
+} */
+
+/* #blocks div:nth-child(2),#blocks div:nth-child(3),#blocks div:nth-child(4) {
+margin-top: 100px;
+} */
+
+.text {
+  grid-column: 1 / span 4;
+  border-bottom: 1px solid #ffffff;
+  max-height: 300px;
+}
+
+
+/* Elements ================================================ */
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+
+/* text: drag color ================================================ */
+
+::selection {
+  /* color: white;
+  background: black; */
+  color: black;
+  background: white;
+}
+
+::-moz-selection { /* Code for Firefox */
+  /* color: white;
+  background: black; */
+  color: black;
+  background: white;
+}
+
+
+/* text: default ================================================ */
+
+p {
+  margin: 2px 0 2px 0;
+  font-family: NeueHaasGrotesk,sans-serif;
+  font-weight: lighter;
+  font-size: 18.72px;
+  letter-spacing: 0.02rem;
+}
+
+a {
+  text-decoration: none;
+  color: #b2b2b2;
+  /* position: relative;
+  visibility: hidden; */
+} 
+
+a:hover {
+  color: #565656;
+}
+
+/* a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  content: "aaa";
+} */
+
+
+
+@media only screen and (min-width:1200px) {
+
+  /* Blocks ================================================ */
+
+  #blocks {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  }
+
+  .text {
+    grid-column: 1 / span 5;
+  }
+
+}
+
+
+@media only screen and (max-width:935px) {
+
+  /* Variable ================================================ */
+
+  :root {
+    --col1-height: 50px;
+    --col2-1-width: 290px;
+    --col4-height: 80px;
+
+    --col1-btn-padding: 6px;
+  }
+
+  /* Blocks ================================================ */
+
+  #blocks {
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin: 0;
+    /* margin: 208px 0 0 0; */
+  }
+
+  #blocks div:nth-child(1) {
+    display: block;
+    margin-top: calc(var(--col1-height) + var(--col4-height));
+    margin-bottom: 0;
+  }
+
+  .text {
+    grid-column: 1 / span 3;
+  }
+
+
+  /* text: default ================================================ */
+
+  p {
+    font-size: 16px;
+  }
+
+}
+
+
+@media only screen and (max-width:400px) {
+
+  /* Variable ================================================ */
+
+  :root {
+    --col2-1-width: 0px;
+    --col3-width: 0%;
+    --col4-height: 54px;
+  }
+
+  /* Blocks ================================================ */
+
+  #blocks {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .text {
+    grid-column: 1 / span 2;
+  }
+
+}

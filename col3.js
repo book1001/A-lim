@@ -73,6 +73,7 @@ function filterSelectionTablet(c) {
     document.getElementById("col2-2").style.visibility = "hidden";
     document.getElementById("col2-2").style.opacity = "0";
     document.getElementById("col2-2").style.pointerEvents = "none";
+    document.getElementById("col2-3").style.display = "none";
     document.getElementById("col3").style.display = "block";
     document.getElementById("col4").style.display = "block";
     document.getElementById("closeContents").style.display = "none";
@@ -88,6 +89,7 @@ function filterSelectionTablet(c) {
       document.getElementById("col2-2").style.visibility = "hidden";
       document.getElementById("col2-2").style.opacity = "0";
       document.getElementById("col2-2").style.pointerEvents = "none";
+      document.getElementById("col2-3").style.display = "none";
       document.getElementById("col3").style.display = "block";
       document.getElementById("col4").style.display = "block";
       document.getElementById("closeContents").style.display = "none";
@@ -131,6 +133,7 @@ function filterSelectionPC(c) {
     document.getElementById("col2-2").style.visibility = "visible";
     document.getElementById("col2-2").style.opacity = "1";
     document.getElementById("col2-2").style.pointerEvents = "auto";
+    document.getElementById("col2-3").style.display = "none";
     document.getElementById("col3").style.display = "block";
     document.getElementById("closeContents").style.display = "none";
     $grid.masonry('layout');
@@ -145,6 +148,7 @@ function filterSelectionPC(c) {
       document.getElementById("col2-2").style.visibility = "visible";
       document.getElementById("col2-2").style.opacity = "1";
       document.getElementById("col2-2").style.pointerEvents = "auto";
+      document.getElementById("col2-3").style.display = "none";
       document.getElementById("col3").style.display = "block";
       document.getElementById("closeContents").style.display = "none";
       $grid.masonry('layout');
