@@ -1,6 +1,12 @@
 /* font: import ================================================ */
 
 @font-face {
+  font-family: 'NeueHaasGrotesk';
+  src: url('./font/NeueHaasGroteskText-Regular.woff') format('woff');
+  src: url('./font/NeueHaasGroteskText-Regular.woff2') format('woff2');
+}
+
+/* @font-face {
   font-family: 'able_studiodoguVF';
   src: url('./font/able_studiodoguVF.ttf') format('truetype');
 }
@@ -21,11 +27,6 @@
   src: url('./font/ABCDiatype-Regular.otf') format('opentype');
 }
 @font-face {
-  font-family: 'NeueHaasGrotesk';
-  src: url('./font/NeueHaasGroteskText-Regular.woff') format('woff');
-  src: url('./font/NeueHaasGroteskText-Regular.woff2') format('woff2');
-}
-@font-face {
   font-family: 'icons';
   src: url('./font/icons.eot');
   src: url('./font/icons.woff2') format('woff2'),
@@ -33,7 +34,7 @@
        url('./font/icons.ttf') format('truetype'),
        url('./font/icons.svg#icons-Regular') format('svg'),
        url('./font/icons.eot?#iefix') format('embedded-opentype');
-}
+} */
 
 
 /* text: align ================================================ */
