@@ -15,8 +15,11 @@ let images = document.getElementsByClassName("zoomIn");
 for(let i=0; i<images.length; i++) {
   images[i].onclick = function(){
     modal.style.display = "block";
+    let imageSrc = this.src;
+    let fileName = imageSrc.substring(imageSrc.lastIndexOf('/') + 1);
+    modalImg.src = "image_zoom/" + fileName;
     // xIcon.style.display = "block";
-    modalImg.src = this.src;
+    // modalImg.src = this.src;
     // document.body.style.overflowY = "hidden";
   }
 }
